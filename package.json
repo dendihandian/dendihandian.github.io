@@ -22,6 +22,7 @@
   "devDependencies": {
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.2",
+    "bootstrap-icons": "^1.5.0",
     "parcel-bundler": "^1.12.5"
   }
 }
