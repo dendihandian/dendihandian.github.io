@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add sass -D
+
+PATH: 
+  C:\Users\dendi\AppData\Roaming\nvm\v14.16.0\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\dendi\Codes\github\dendihandian.github.io\node_modules\.bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\dendi\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\WSO2\apictl;C:\Program Files\WSO2\API Manager\3.2.0\bin\..\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Go\bin;C:\Program Files\WSO2\Enterprise Integrator\7.1.0\micro-integrator\\bin;C:\Program Files\WSO2\Enterprise Integrator\7.1.0\micro-integrator-dashboard\\bin;C:\Program Files\WSO2\Enterprise Integrator\7.1.0\streaming-integrator\\bin;C:\Program Files\WSO2\mi-cli\bin;C:\Users\dendi\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\dendi\AppData\Local\Programs\Python\Python39\;C:\Users\dendi\AppData\Local\Microsoft\WindowsApps;C:\Users\dendi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dendi\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\dendi\.pyenv\pyenv-win\bin;C:\Users\dendi\.pyenv\pyenv-win\shims;C:\Users\dendi\AppData\Roaming\Python\Scripts;C:\Users\dendi\AppData\Roaming\Python\Python39\Scripts;C:\Users\dendi\go\bin;C:\Program Files\heroku\bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\dendi\Codes\github\dendihandian.github.io\node_modules\deasync\bin\win32-x64-node-14\deasync.node'
+
+npm manifest: 
+  {
+    "name": "dendihandian.github.io",
+    "version": "1.0.0",
+    "description": "[https://dendihandian.github.io](https://dendihandian.github.io)",
+    "main": "index.js",
+    "scripts": {
+      "dev": "parcel ./src/index.html",
+      "prebuild": "npx rimraf build",
+      "build": "parcel build --public-url ./ ./src/index.html --experimental-scope-hoisting --out-dir build"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dendihandian/dendihandian.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/dendihandian/dendihandian.github.io/issues"
+    },
+    "homepage": "https://dendihandian.github.io",
+    "devDependencies": {
+      "@popperjs/core": "^2.9.2",
+      "bootstrap": "^5.0.2",
+      "parcel-bundler": "^1.12.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

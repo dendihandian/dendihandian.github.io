@@ -1,0 +1,27 @@
+{
+  "name": "dendihandian.github.io",
+  "version": "1.0.0",
+  "description": "[https://dendihandian.github.io](https://dendihandian.github.io)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "prebuild": "npx rimraf build",
+    "build": "parcel build --public-url ./ ./src/index.html --experimental-scope-hoisting --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dendihandian/dendihandian.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dendihandian/dendihandian.github.io/issues"
+  },
+  "homepage": "https://dendihandian.github.io",
+  "devDependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2",
+    "parcel-bundler": "^1.12.5"
+  }
+}
