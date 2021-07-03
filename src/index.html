@@ -43,95 +43,46 @@
                     <p>Experience - Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, quaerat. At cupiditate illum ex quis sunt sed mollitia, ullam ea nisi maxime culpa neque repellat, veritatis placeat eligendi quod id?</p>
                 </div>
                 <div class="tab-pane fade px-1 py-4" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
-                    <div class="row p-2">
-                        <div class="col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">Laravel</div>
+                    <div class="row p-2" x-data="{ skills: skills}">
+                        <template x-for="skill in skills">
+                            <div class="col-lg-3 mb-3">
+                                <div class="card">
+                                    <div class="card-body" x-text="skill.name"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">Laravel</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">Laravel</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">Laravel</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">Laravel</div>
-                            </div>
-                        </div>
+                        </template>
                     </div>
                 </div>
                 <div class="tab-pane fade px-1 py-4" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
-                    <div class="row p-2">
-                        <div class="col-lg-4 mb-3">
-                            <div class="card" style="height: 10rem;">
-                                <div class="card-header bg-transparent"><span class="fw-bold">Web Resume</span></div>
-                                <div class="card-body py-2">
-                                    <p>You are looking at it right now</p>
-                                </div>
-                                <div class="card-footer bg-transparent border-top-0 px-2 text-end">
-                                    <a class="text-decoration-none" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-3">
-                            <div class="card" style="height: 10rem;">
-                                <div class="card-header bg-transparent"><span class="fw-bold">Grafify</span></div>
-                                <div class="card-body py-2">
-                                    <p>A graph viewer app for JSON data</p>
-                                </div>
-                                <div class="card-footer bg-transparent border-top-0 px-2 text-end">
-                                    <a class="text-decoration-none" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                        </svg>
-                                    </a>
+                    <div class="row p-2" x-data="{ portfolios: portfolios }">
+                        <template x-for="portfolio in portfolios">
+                            <div class="col-lg-4 mb-3">
+                                <div class="card" style="height: 10rem;">
+                                    <div class="card-header bg-transparent"><span class="fw-bold" x-text="portfolio.name"></span></div>
+                                    <div class="card-body py-2">
+                                        <p x-text="portfolio.desc"></p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-top-0 px-2 text-end">
+                                        <a class="text-decoration-none" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </template>
                     </div>
                 </div>
                 <div class="tab-pane fade px-1 py-4" id="nav-certificates" role="tabpanel" aria-labelledby="nav-certificates-tab">
-                    <div class="row p-2">
-                        <div class="col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">Laravel Certificate</div>
+                    <div class="row p-2" x-data="{ certificates: certificates }">
+                        <template x-for="certificate in certificates">
+                            <div class="col-lg-3 mb-3">
+                                <div class="card">
+                                    <div class="card-body" x-text="certificate.name"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">Laravel Certificate</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">Laravel Certificate</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">Laravel Certificate</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 mb-3">
-                            <div class="card">
-                                <div class="card-body">Laravel Certificate</div>
-                            </div>
-                        </div>
+                        </template>
                     </div>
                 </div>
                 <div class="tab-pane fade px-1 py-4" id="nav-contacts" role="tabpanel" aria-labelledby="nav-contacts-tab">

@@ -1,5 +1,5 @@
-// import data
-// import * as data from './data';
+// load data
+require('./data');
 
 // import bootstrap's all plugins
 import * as bootstrap from 'bootstrap';
@@ -16,6 +16,5 @@ var ready = (callback) => {
 
 ready(() => { 
   Alpine.start();
-  // alert('lorem');
 });
 
