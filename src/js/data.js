@@ -1,4 +1,4 @@
-window.portfolios = [
+const portfolios = [
     {
         name: 'Web Resume',
         desc: 'You are looking at it right now.',
@@ -8,8 +8,9 @@ window.portfolios = [
         desc: 'An online graph viewer for JSON graph data based on NetworkX and D3.js',
     },
 ];
+window.portfolios = portfolios;
 
-window.skills = [
+const skills = [
     {
         name: 'Laravel PHP',
         capabilities: [],
@@ -55,8 +56,9 @@ window.skills = [
         capabilities: [],
     },
 ];
+window.skills = skills;
 
-window.certificates = [
+const certificates = [
     {
         name: 'REST APIs with Flask and Python',
         org: 'Udemy',
@@ -66,3 +68,32 @@ window.certificates = [
         credential_url: 'https://www.udemy.com/certificate/UC-59a3365e-9100-474a-9bca-9f09bb01f905',
     },
 ];
+window.certificates = certificates;
+
+const contacts = [
+    {
+        name: 'E-mail',
+        account: 'contact.dendi@yahoo.com',
+        url: '#',
+        bi: 'bi bi-envelope-fill',
+    },
+    {
+        name: 'Github',
+        account: 'github.com/dendihandian',
+        url: 'https://github.com/dendihandian',
+        bi: 'bi bi-github',
+    },
+    {
+        name: 'LinkedIn',
+        account: 'linkedin.com/in/dendihandian',
+        url: 'https://linkedin.com/in/dendihandian',
+        bi: 'bi bi-linkedin',
+    },
+    {
+        name: 'LinkedIn',
+        account: 'dev.to/dendihandian',
+        url: 'https://dev.to/dendihandian',
+        bi: 'bi bi-question-square-fill',
+    },
+];
+window.contacts = contacts;

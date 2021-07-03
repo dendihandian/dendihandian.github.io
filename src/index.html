@@ -57,7 +57,7 @@
                         <template x-for="portfolio in portfolios">
                             <div class="col-lg-4 mb-3">
                                 <div class="card" style="height: 10rem;">
-                                    <div class="card-header bg-transparent"><span class="fw-bold" x-text="portfolio.name"></span></div>
+                                    <div class="card-header bg-transparent border-0"><span class="fw-bold" x-text="portfolio.name"></span></div>
                                     <div class="card-body py-2">
                                         <p x-text="portfolio.desc"></p>
                                     </div>
@@ -81,11 +81,20 @@
                     </div>
                 </div>
                 <div class="tab-pane fade px-1 py-4" id="nav-contacts" role="tabpanel" aria-labelledby="nav-contacts-tab">
-                    <div class="row p-2" x-data="{range: [0,1,2,3]}">
-                        <template x-for="i in range">
+                    <div class="row p-2" x-data="{contacts: contacts}">
+                        <template x-for="contact in contacts">
                             <div class="col-lg-6 mb-3">
                                 <div class="card">
-                                    <div class="card-body">DEV.to</div>
+                                    <div class="card-body row">
+                                        <div class="col-lg-1">
+                                            <span class="fs-1">
+                                                <i x-bind:class="contact.bi"></i>
+                                            </span>
+                                        </div>
+                                        <div class="col-lg-11 d-flex align-items-center px-4">
+                                            <a class="text-decoration-none fw-bold text-primary" :href="contact.url" x-text="contact.account" target="_blank"></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </template>
