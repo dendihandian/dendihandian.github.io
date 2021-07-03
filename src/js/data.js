@@ -1,5 +1,15 @@
 const portfolios = [
     {
+        name: 'MVDB API',
+        desc: 'A movie and cinematic database API',
+        url: 'https://github.com/dendihandian/mvdb-api',
+    },
+    {
+        name: 'SBAdmin Laravel Starter',
+        desc: 'An admin panel starter using Laravel and SBAdmin template',
+        url: 'https://sbadmin-laravel.herokuapp.com',
+    },
+    {
         name: 'Web Resume',
         desc: 'You are looking at it right now.',
         url: '#',
@@ -69,10 +79,18 @@ const certificates = [
     {
         name: 'REST APIs with Flask and Python',
         org: 'Udemy',
-        issue_date: 'September 2020',
+        issued_date: 'September 2020',
         exp_date: '',
         credential_id: 'UC-59a3365e-9100-474a-9bca-9f09bb01f905',
         credential_url: 'https://www.udemy.com/certificate/UC-59a3365e-9100-474a-9bca-9f09bb01f905',
+    },
+    {
+        name: 'React for Web Development Training - Vox Teneo Asia',
+        org: 'Refactory',
+        issued_date: 'December 2018',
+        exp_date: '',
+        credential_id: 'SIUP No: 503/8661.A/436.6.11/2015a',
+        credential_url: 'https://refactory.id/corp-certificate/EDO4RXZ0X73Z',
     },
 ];
 window.certificates = certificates;

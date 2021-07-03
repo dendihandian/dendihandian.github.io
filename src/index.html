@@ -72,9 +72,19 @@
                 <div class="tab-pane fade px-1 py-4" id="nav-certificates" role="tabpanel" aria-labelledby="nav-certificates-tab">
                     <div class="row p-2" x-data="{ certificates: certificates }">
                         <template x-for="certificate in certificates">
-                            <div class="col-lg-3 mb-3">
-                                <div class="card">
-                                    <div class="card-body" x-text="certificate.name"></div>
+                            <div class="col-lg-4 mb-3">
+                                <div class="card" style="height: 16rem;">
+                                    <div class="card-body">
+                                        <p class="fw-bold" x-text="certificate.name"></p>
+                                        <p class="fs-4 fw-normal" x-text="certificate.org"></p>
+                                        <p class="fw-normal" x-text="certificate.issued_date + ' - ' + certificate.exp_date"></p>
+                                        <span class="fw-normal text-muted" x-text="certificate.credential_id"></span>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-top-0 text-end">
+                                        <a class="text-decoration-none" :href="certificate.credential_url" target="_blank">
+                                            <i class="bi bi-arrow-right-square fs-3"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </template>
