@@ -27,6 +27,10 @@ window.skills = [
         capabilities: [],
     },
     {
+        name: 'React JS',
+        capabilities: [],
+    },
+    {
         name: 'Redis',
         capabilities: [],
     },
@@ -36,6 +40,18 @@ window.skills = [
     },
     {
         name: 'Parcel JS',
+        capabilities: [],
+    },
+    {
+        name: 'Laravel-Mix JS',
+        capabilities: [],
+    },
+    {
+        name: 'MySQL',
+        capabilities: [],
+    },
+    {
+        name: 'Git',
         capabilities: [],
     },
 ];
