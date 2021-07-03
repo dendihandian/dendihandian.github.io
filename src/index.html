@@ -52,17 +52,17 @@
                         </template>
                     </div>
                 </div>
-                <div class="tab-pane fade px-1 py-4" id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
+                <div class="tab-pane fade px-1 py-4 id="nav-portfolio" role="tabpanel" aria-labelledby="nav-portfolio-tab">
                     <div class="row p-2" x-data="{ portfolios: portfolios }">
                         <template x-for="portfolio in portfolios">
                             <div class="col-lg-4 mb-3">
-                                <div class="card" style="height: 10rem;">
-                                    <div class="card-header bg-transparent border-0"><span class="fw-bold" x-text="portfolio.name"></span></div>
+                                <div class="card" style="height: 13rem;">
+                                    <div class="card-header bg-transparent border-0 pt-3"><span class="fw-bold" x-text="portfolio.name"></span></div>
                                     <div class="card-body py-2">
                                         <p x-text="portfolio.desc"></p>
                                     </div>
-                                    <div class="card-footer bg-transparent border-top-0 px-2 text-end">
-                                        <a class="text-decoration-none" href="#"><i class="bi bi-arrow-right-square"></i></a>
+                                    <div class="card-footer bg-transparent border-top-0 text-end">
+                                        <a class="text-decoration-none" :href="portfolio.url" target="_blank"><i class="bi bi-arrow-right-square fs-3"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@
                                     <div class="card-body row">
                                         <div class="col-lg-1">
                                             <span class="fs-1">
-                                                <i x-bind:class="contact.bi"></i>
+                                                <i :class="contact.bi"></i>
                                             </span>
                                         </div>
                                         <div class="col-lg-11 d-flex align-items-center px-4">

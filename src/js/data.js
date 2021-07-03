@@ -2,10 +2,17 @@ const portfolios = [
     {
         name: 'Web Resume',
         desc: 'You are looking at it right now.',
+        url: '#',
     },
     {
         name: 'Grafify',
         desc: 'An online graph viewer for JSON graph data based on NetworkX and D3.js',
+        url: 'https://grafify.herokuapp.com',
+    },
+    {
+        name: 'Agrabinta',
+        desc: 'A small-focused GIS for Agrabinta sub-district',
+        url: 'https://agrabinta.netlify.app',
     },
 ];
 window.portfolios = portfolios;
