@@ -20,7 +20,6 @@
   },
   "homepage": "https://dendihandian.github.io",
   "devDependencies": {
-    "@popperjs/core": "^2.9.2",
     "alpinejs": "^3.2.1",
     "parcel-bundler": "^1.12.5",
     "startbootstrap-freelancer": "^7.0.4"
