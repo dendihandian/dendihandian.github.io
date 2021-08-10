@@ -1,0 +1,22 @@
+#mainNav {
+
+    .navbar-brand:hover {
+        color: #fff !important;
+    }
+
+    .navbar-nav {
+
+        .nav-item {
+
+            .nav-link {
+                color: #fff !important;
+            }
+
+            .nav-link.active {
+                background-color: $primary !important;
+            }
+
+        }
+
+    }
+}
