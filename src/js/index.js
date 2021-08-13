@@ -1,1 +1,1 @@
-require('startbootstrap-freelancer/dist/js/scripts');
+// require('startbootstrap-freelancer/dist/js/scripts');
