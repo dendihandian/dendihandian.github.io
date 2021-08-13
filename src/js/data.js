@@ -1,25 +1,30 @@
 const portfolios = [
     {
+        id: 'mvdb',
         name: 'MVDB API',
         desc: 'A movie and cinematic database API',
         url: 'https://github.com/dendihandian/mvdb-api',
     },
     {
+        id: 'sals',
         name: 'SBAdmin Laravel Starter',
         desc: 'An admin panel starter using Laravel and SBAdmin template',
         url: 'https://sbadmin-laravel.herokuapp.com',
     },
     {
+        id: 'wres',
         name: 'Web Resume',
         desc: 'You are looking at it right now.',
         url: '#',
     },
     {
+        id: 'graf',
         name: 'Grafify',
         desc: 'An online graph viewer for JSON graph data based on NetworkX and D3.js',
         url: 'https://grafify.herokuapp.com',
     },
     {
+        id: 'agra',
         name: 'Agrabinta',
         desc: 'A small-focused GIS for Agrabinta sub-district',
         url: 'https://agrabinta.netlify.app',
