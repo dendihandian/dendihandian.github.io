@@ -1,27 +1,18 @@
 {
-  "name": "dendihandian.github.io",
-  "version": "1.0.0",
-  "description": "[https://dendihandian.github.io](https://dendihandian.github.io)",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "parcel ./src/index.html",
-    "prebuild": "npx rimraf build",
-    "build": "parcel build --public-url ./ ./src/index.html --experimental-scope-hoisting --out-dir build"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dendihandian/dendihandian.github.io.git"
+  "dependencies": {
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dendihandian/dendihandian.github.io/issues"
-  },
-  "homepage": "https://dendihandian.github.io",
   "devDependencies": {
-    "alpinejs": "^3.2.1",
-    "parcel-bundler": "^1.12.5",
-    "startbootstrap-freelancer": "^7.0.4"
+    "babel-plugin-transform-define": "^1.3.0"
   }
 }
