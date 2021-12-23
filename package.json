@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "homepage": "https://dendihandian.github.io",
   "scripts": {
     "dev": "next",
     "build": "next build",
