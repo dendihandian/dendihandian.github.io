@@ -4,7 +4,7 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="flex flex-col min-h-screen bg-true-gray-800">
+    <div className="flex flex-col min-h-screen bg-neutral-800">
       {/* <AppHeader/> */}
       <main className='flex items-center justify-center h-screen'>
         <Component {...pageProps} />
