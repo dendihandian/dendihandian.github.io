@@ -30,8 +30,8 @@ export const TypedIntroduction = () => {
   }, [])
 
   return (
-    <div className='flex justify-center w-full'>
-        <h1 className='text-white md:text-3xl wrap'>
+    <div className='flex justify-center w-full text-center'>
+        <h1 className='text-white md:text-3xl'>
           Hi, I am <span className='font-bold text-transparent bg-gradient-to-r bg-clip-text from-orange-300 to-red-800' style={{ whiteSpace: 'pre' }} ref={el} />
         </h1>
     </div>
