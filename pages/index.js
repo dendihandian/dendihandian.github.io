@@ -39,7 +39,7 @@ export default function Home() {
           </a>
         </div>
         <div className="flex justify-center w-full mt-4">
-          <span className="text-xs text-gray-500">Icons by <a class="hover:text-blue-500" href="https://fontawesome.com/license" target="_blank" rel="noreferrer">Font Awesome</a></span>
+          <span className="text-xs text-gray-500">Icons by <a className="hover:text-blue-500" href="https://fontawesome.com/license" target="_blank" rel="noreferrer">Font Awesome</a></span>
         </div>
       </div>
     </Fragment>

@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import Script from 'next/script'
 // import AppHeader from '../components/AppHeader'
 // import AppFooter from '../components/AppFooter'
 
@@ -10,6 +11,17 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </main>
       {/* <AppHeader/> */}
+
+      <Script
+        id="google-analytics"
+        src="https://www.googletagmanager.com/gtag/js?id=G-K1GBRPSSCL"
+        onLoad={() => {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-K1GBRPSSCL');
+        }}
+      />
     </div>
   )
 }
