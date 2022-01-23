@@ -11,7 +11,7 @@ const portfolios = [
     },
     {
         'name': 'Transfermarkt Scrapper',
-        'desc': 'A scrapy project to scraping transfer per day data from transfermarkt website and store it into SQLite database',
+        'desc': 'A scrapy project for scraping transfers per day data from transfermarkt website and store it into SQLite database',
         'project_url': 'https://github.com/dendihandian/transfermarkt-scrapper-api',
         'colors': ['text-stone-500', 'from-stone-500', 'to-stone-700'],
     },
