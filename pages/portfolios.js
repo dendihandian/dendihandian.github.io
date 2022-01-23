@@ -10,6 +10,12 @@ const portfolios = [
         'colors': ['text-teal-500', 'from-teal-500', 'to-teal-700'],
     },
     {
+        'name': 'Transfermarkt Scrapper',
+        'desc': 'A scrapy project to scraping transfer per day data from transfermarkt website and store it into SQLite database',
+        'project_url': 'https://github.com/dendihandian/transfermarkt-scrapper-api',
+        'colors': ['text-stone-500', 'from-stone-500', 'to-stone-700'],
+    },
+    {
         'name': 'Grafify',
         'desc': 'An JSON graph viewer app based on D3.js and NetworkX.',
         'project_url': 'https://grafify.herokuapp.com',
