@@ -10,6 +10,12 @@ const portfolios = [
         'colors': ['text-teal-500', 'from-teal-500', 'to-teal-700'],
     },
     {
+        'name': 'Sklearn Datasets ML API',
+        'desc': 'A proof of concept project for demonstrating the Sklearn ML classification and regression models served as API and containerizated as docker service.',
+        'project_url': 'https://hub.docker.com/r/dendihandian/sklearn-datasets-ml-api',
+        'colors': ['text-stone-500', 'from-stone-500', 'to-stone-700'],
+    },
+    {
         'name': 'Transfermarkt Scrapper',
         'desc': 'A scrapy project for scraping transfers per day data from transfermarkt website and store it into SQLite database',
         'project_url': 'https://github.com/dendihandian/transfermarkt-scrapper-api',
