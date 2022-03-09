@@ -39,6 +39,13 @@ const portfolios = [
         'project_url': 'https://agrabinta.netlify.app',
         'colors': ['text-purple-500', 'from-purple-500', 'to-purple-700'],
     },
+    {
+        'name': 'WhatsApp Messaging Director',
+        'desc': 'Text someone on WhatsApp without saving the number and open the room in the application',
+        'project_url': '/whatsapp-messaging-director',
+        'colors': ['text-green-500', 'from-green-500', 'to-green-700'],
+        'built_in': true,
+    },
   ]
 
 export default function Portfolios() {
@@ -53,17 +60,23 @@ export default function Portfolios() {
         <div className="flex flex-col p-8 mt-6">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                 {portfolios.map((portfolio, index) => (
-                <div key={index} className="relative flex flex-col w-full h-32 border border-white rounded">
-                    <div className="px-4 py-3 leading-none text-left">
-                        <h3 className={`font-medium ` + portfolio.colors[0]}>{portfolio.name}</h3>
+                    <div key={index} className="relative flex flex-col w-full h-32 border border-white rounded">
+                        <div className="px-4 py-3 leading-none text-left">
+                            <h3 className={`font-medium ` + portfolio.colors[0]}>{portfolio.name}</h3>
+                        </div>
+                        <div className="flex-grow px-4">
+                            <p className="text-sm leading-none text-left text-white">{portfolio.desc}</p>
+                        </div>
+                        <div className="absolute bottom-0 right-0 mb-2 mr-2">
+                            {(portfolio.built_in || false) ? (
+                                <Link href={portfolio.project_url} as={process.env.BACKEND_URL + portfolio.project_url}>
+                                    <a className={`px-2 py-1 text-xs text-white rounded bg-gradient-to-r ` + portfolio.colors[1] + ` ` + portfolio.colors[2]}>See Project</a>
+                                </Link>
+                            ) : (
+                                <a className={`px-2 py-1 text-xs text-white rounded bg-gradient-to-r ` + portfolio.colors[1] + ` ` + portfolio.colors[2]} href={portfolio.project_url} target="_blank">See Project</a>
+                            )}
+                        </div>
                     </div>
-                    <div className="flex-grow px-4">
-                        <p className="text-sm leading-none text-left text-white">{portfolio.desc}</p>
-                    </div>
-                    <div className="absolute bottom-0 right-0 mb-2 mr-2">
-                        <a className={`px-2 py-1 text-xs text-white rounded bg-gradient-to-r ` + portfolio.colors[1] + ` ` + portfolio.colors[2]} href={portfolio.project_url} target="_blank">See Project</a>
-                    </div>
-                </div>
                 ))}
             </div>
 
